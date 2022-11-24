@@ -1,0 +1,7 @@
+Variables, Funciones/Métodos, Clases y Id's:
+ - ('inicioFuncion', 'variableNumeroUno', 'variableNumeroDos', etc...)
+
+
+Componentes de React:
+ - ('MenuInferior', 'DropdownDificultad', 'ScrollLateralPokemones', etc...)
+
