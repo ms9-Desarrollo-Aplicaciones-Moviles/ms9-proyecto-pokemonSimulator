@@ -1,0 +1,106 @@
+.btn-carrusel{
+    margin: 0px auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: none;
+}
+
+.container-carrusel{
+    margin: 0px auto;
+    background-color: aqua;
+    width: 90%;
+    height: 85%;
+    padding: 20px;
+}
+
+
+.elemento{
+    margin: 0px auto;
+    margin-top: 10px;
+    background-color: white;
+    width: 90%;
+    height: 60px;
+    border: 5px solid #1D2C5E;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.seleccionado{
+    margin: 0px auto;
+    margin-top: 10px;
+    background-color: #296CB9;
+    width: 90%;
+    height: 60px;
+    border: 5px solid #1D2C5E;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.elemento-left{
+    margin: 0px auto;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-pokemon{
+    width: 90px;
+    height: 90px;
+    position:absolute;
+    left: -20px;
+    bottom:-15px
+}
+
+.imagen-pokemon img{
+    margin: 0px auto;
+    width: 90px;
+    height: 90px;
+}
+
+.elemento-dato{
+    width: 40%;
+    height: 55px;
+    padding: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;  
+}
+
+.elemento-dato h4{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 2px;
+}
+.elemento-dato p{
+    font-size: 14px;
+    margin: 0px;
+}
+
+
+.elemento-grafico{
+    width: 40%;
+    height: 55px;
+    padding: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end
+}
+
+.barra-vida{
+    margin-top: 10px;
+    width: 170px;
+}
+
+.elemento-grafico p{
+    font-size: 14px;
+    margin: 0px;
+}
