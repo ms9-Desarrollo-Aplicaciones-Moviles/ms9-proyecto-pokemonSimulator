@@ -5,7 +5,7 @@ import MenuPokedex from './Components/Pokedex/MenuPokedex'
 //import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
+  <>
     <MenuPokedex/>
-  </React.StrictMode>
+  </>
 )
