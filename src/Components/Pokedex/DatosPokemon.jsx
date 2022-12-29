@@ -1,10 +1,11 @@
 import './DatosPokemon.css'
 
-const DatosPokemon = () => {
+const DatosPokemon = (props) => {
     return (
         <>
             <div className="menu-datos">
                 <div className='datos-derecho'>
+                    {props.elElegido}
                     <div className='foto-pokemon'>
                         <img className='sprite-pokemon' src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png" alt="#" />
                     </div>

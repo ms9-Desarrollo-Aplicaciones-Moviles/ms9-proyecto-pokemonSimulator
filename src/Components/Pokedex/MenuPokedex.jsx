@@ -8,6 +8,8 @@ import { useEffect, useState } from 'react';
 const MenuPokedex = () => {
     
     const allPokemons = GetPokemon();
+    const [pokemonSelecionado,setPokemmonSelecionado] = useState(0)
+
     
     console.log('allPokemons', allPokemons);
    
@@ -22,7 +24,7 @@ const MenuPokedex = () => {
                             <button id='btn-batalla'>Batalla Pokemon</button>
                         </div>
 
-                        <DatosPokemon />
+                        <DatosPokemon pokemon={allPokemons} elElegido={pokemonSelecionado} />
 
                         <div className="lista-seleccion">
                             <p>ESCOGE 5 POKEMONES:</p>
@@ -46,7 +48,8 @@ const MenuPokedex = () => {
                         </div>
                     </div>
                     <div className="card-carrucel">
-                        <Carrucel
+                        <Carrucel 
+                        cambiarPokemon = {setPokemmonSelecionado}
                         pokemon={allPokemons}
                         />
                     </div>
