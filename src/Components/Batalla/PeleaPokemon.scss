@@ -1,0 +1,62 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Consolas';
+}
+
+.principal {
+	display: flex;
+	margin: 10px 30px;
+	.pokemonUsuario {
+		flex: 1;
+		border: red 1px solid;
+	}
+	.pokemonPC {
+		flex: 1;
+		border: red 1px solid;
+	}
+}
+
+.barraMenu {
+	display: flex;
+	position: absolute;
+	background-color: lightgray;
+	border-radius: 5px;
+	font-size: 18px;
+	font-weight: bolder;
+	width: 60em;
+	height: 100px;
+	text-align: center;
+	align-items: center;
+	margin: 0px 0px 10px 30px;
+	padding: 5px;
+	top: 470px;
+	gap: 5px;
+	.texto {
+		display: flex;
+		background-color: white;
+		border-radius: 5px;
+		width: 55%;
+		height: 100%;
+		align-items: center;
+		justify-content: center;
+	}
+	.botones {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 5px;
+		background-color: #8480b0;
+		width: 45%;
+		height: 100%;
+		gap: 50px;
+		.boton {
+			font: inherit;
+			width: 30%;
+			height: 50px;
+			border: lightgray 4px solid;
+			border-radius: 5px;
+		}
+	}
+}

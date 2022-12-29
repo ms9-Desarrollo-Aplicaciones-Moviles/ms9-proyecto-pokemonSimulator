@@ -1,11 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import MenuPokedex from './Components/Pokedex/MenuPokedex'
-//import App from './App'
-//import './index.css'
+import App from './App'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <MenuPokedex/>
-  </React.StrictMode>
+	<React.StrictMode>
+		<App />
+	</React.StrictMode>
 )
