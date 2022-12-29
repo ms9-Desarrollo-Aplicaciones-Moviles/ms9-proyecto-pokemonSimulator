@@ -1,0 +1,60 @@
+
+.menu-datos{
+    margin: 0px auto;
+    margin-top: 5px;
+    background-color: white;
+    color: #262626;
+    width: 90%;
+    min-height: 300px;
+    border: 4px solid #C7A008;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.datos-derecho, .datos-izquierdo{
+    width: 45%;
+    padding: 10px;
+}
+
+.foto-pokemon{
+    width: 221px;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sprite-pokemon{
+    width: 200px;
+}
+
+.espeficacion-derecho{
+    margin: 0px auto;
+    width: 100%;
+}
+
+.dato-detalle{
+    width: 100%;
+    min-height: 30px;
+    font-size: 17px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.dato-detalle p{
+    width: 50%;
+    text-align: center;
+
+}
+
+.dato-detalle label{
+    width: 50%;
+    text-align: center;
+    font-weight: 800;
+
+}
