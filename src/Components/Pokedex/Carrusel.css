@@ -7,10 +7,8 @@
 
 .container-carrusel{
     margin: 0px auto;
-    background-color: aqua;
-    width: 90%;
+    width: 95%;
     height: 85%;
-    padding: 20px;
 }
 
 
@@ -18,9 +16,9 @@
     margin: 0px auto;
     margin-top: 10px;
     background-color: white;
-    width: 90%;
-    height: 60px;
-    border: 5px solid #1D2C5E;
+    width: 95%;
+    height: 65px;
+    border: 5px solid rgb(64, 19, 94);;
     border-radius: 20px;
     display: flex;
     justify-content: center;
@@ -51,8 +49,8 @@
 }
 
 .imagen-pokemon{
-    width: 90px;
-    height: 90px;
+    width: 85px;
+    height: 85px;
     position:absolute;
     left: -20px;
     bottom:-15px
@@ -60,8 +58,8 @@
 
 .imagen-pokemon img{
     margin: 0px auto;
-    width: 90px;
-    height: 90px;
+    width: 85px;
+    height: 85px;
 }
 
 .elemento-dato{
@@ -88,16 +86,15 @@
 
 .elemento-grafico{
     width: 40%;
-    height: 55px;
-    padding: 4px;
+    height: 45px;
     display: flex;
     flex-direction: column;
-    align-items:flex-end
+    align-items:flex-end;
 }
 
 .barra-vida{
-    margin-top: 10px;
-    width: 170px;
+    margin-top: 5px;
+    width: 150px;
 }
 
 .elemento-grafico p{

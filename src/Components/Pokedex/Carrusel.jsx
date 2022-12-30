@@ -16,7 +16,7 @@ const Carrucel = (props) =>{
             
             <div className="container-carrusel">
                 <div className="carrusel">
-                {indice}
+                {/* {indice} */}
                 {
                     props.pokemon.map((x, i) =>{
                         if(indice <= i && i <= (indice+5) ){ return <div onClick={()=>props.cambiarPokemon(i)} className="elemento">
