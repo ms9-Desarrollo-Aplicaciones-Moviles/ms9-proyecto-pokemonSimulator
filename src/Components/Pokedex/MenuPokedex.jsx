@@ -1,12 +1,10 @@
-import DatosPokemon from './DatosPokemon';
-import Carrucel from './Carrusel';
-import './MenuPokedex.css';
-import { GetPokemon } from '../Apis/GetDataPokemon.jsx';
-import { useEffect, useState } from 'react';
-
+import DatosPokemon from './DatosPokemon'
+import Carrucel from './Carrusel'
+import './MenuPokedex.css'
+import { GetPokemon } from '../Apis/GetDataPokemon.jsx'
+import { useEffect, useState } from 'react'
 
 const MenuPokedex = () => {
-
     const allPokemons = GetPokemon();
     const [pokemonSelecionado, setPokemmonSelecionado] = useState(0)
 
@@ -150,4 +148,4 @@ const MenuPokedex = () => {
 
 }
 
-export default MenuPokedex;
+export default MenuPokedex
