@@ -13,7 +13,6 @@ const Carrucel = (props) => {
 			>
 				<img src="/img/flechaArriba.png" alt="" />
 			</div>
-
 			<div className="container-carrusel">
 				<div className="carrusel">
 					{indice}
