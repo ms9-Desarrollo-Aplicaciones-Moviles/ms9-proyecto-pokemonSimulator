@@ -11,7 +11,7 @@
     font-family:'Consola','Courier New', Courier, monospace;
 }
 
-.card{
+.pokecard{
     justify-content: center;
     width: 95%;
     height: 95%;
@@ -23,10 +23,14 @@
 .card-menu{
     width: 45%;
     margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 5px solid #833c83 ;
+    border-radius: 10px;
 }
 
 .card-carrucel{
-    background-color:brown; 
     width: 45%;
     margin: 5px;
     display: flex;
@@ -35,6 +39,7 @@
 }
 
 .menu-botones{
+    /* background-color: blueviolet; */
     margin: 0px auto;
     width: 90%;
     height: 70px;
@@ -42,74 +47,150 @@
     justify-content: center;
     align-items: center;
 }
-
-.btn-pokedex{
-    min-width:120px;
-    min-height: 60px;
-    margin: 15px;
+.buscador{
     background-color: white;
-    color: #7F7F7F;
-    border:4px solid #DFDFDF;
-    border-radius: 8px;
-    font-size: 18px;
-    font-weight:700;
-}
-
-#btn-batalla{
-    min-width:120px;
-    min-height: 60px;
-    margin: 15px;
-    background-color: white;
-    color:#8480B0;
-    border:4px solid #8480B0;
-    border-radius: 8px;
-    font-size: 18px;
-    font-weight:700;
-}
-
-.lista-seleccion{
-    margin: 0px auto;
-    margin-top: 10px;
-    width: 90%;
-    height: 110px;
-    padding: 4px;
-    text-align: center;
-    border:3px solid #8480B0;
-    border-radius: 10px;
-}
-
-.lista-seleccion p{
-    margin: 5px;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.lista-pokemon{
-    margin: 0px auto;
-    width: 90%;
-    height: 80px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.pokemon{
-    display: flex;
-    width: 15%;
+    width: 95%;
     height: 60px;
-    margin: 5px;
-    background-color: white;
-    border: 3px solid #8480B0;
-    border-radius: 5px;
+    display: flex;
     align-items: center;
-    justify-content: center;
+    border-bottom: 4px solid #833c83;
 }
 
-.pokemon img{
-    width: 65px;
+.input-buscador{
+    width: 70%;
+    height: 50px;
+    font-size: 14px;
+    color: #382431;
+    border: none;
+    outline: none;
+
 }
+
+.limpiador{
+    width: 75px;
+    height: 50px;
+}
+
+.btn-limpiar{
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+    color: #6d6169;
+    width: 100%;
+    height: 50px;
+}
+
+.btn-limpiar:hover{
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+    color: #c0339d;
+    width: 100%;
+    height: 50px;
+}
+
+.btn-buscar{
+    width:40px;
+    height: 40px;
+    background-color:#8f8cb4;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-buscar:hover{
+    width:40px;
+    height: 40px;
+    background-color:#a370c0;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-filtros{
+    width: 90%;
+    border-radius: 10px;
+    outline-color: #833c83;
+}
+.acordion-filtro{
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(64, 19, 94);
+}
+.acordion-footer{
+    margin: 5px;
+    width: 60%;
+    display: flex;
+    justify-content: right;
+}
+.btn-filtrar{
+    width: 100px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color:#8f8cb4 ;
+}
+
+
+.menu-buscador{
+    width: 90%;
+    height: 80%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;   
+     
+}
+
+.group-tipo{
+    width: 150px;
+    height: 30px;
+    color: rgb(143, 131, 145);
+    margin: 3px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+
+.group-tipo-name{
+    margin-left: 6px;
+} 
+
+.filter-check{
+    appearance: none;
+}
+
+.filter-check {
+    cursor: pointer;
+    background-color: #fff;
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3e%3c/svg%3e");
+    width: 18px;
+    height: 18px;
+    appearance: none;
+    border: 2px solid  rgb(143, 131, 145) ;
+}
+
+.filter-check:checked {
+    background-color: rgb(143, 131, 145);
+  }
+
+
+.filter-check:disabled {
+    background-color: rgb(198, 198, 198);
+    background-image: none;
+  } 
+
+  .filter-check:disabled:checked {
+    background-color: rgb(198, 198, 198);
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3e%3c/svg%3e");
+  }
+
 
 
 
