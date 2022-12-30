@@ -15,9 +15,8 @@ const Carrucel = (props) => {
 			</div>
 			<div className="container-carrusel">
 				<div className="carrusel">
-					{indice}
 					{props.pokemon.map((x, i) => {
-						if (indice <= i && i <= indice + 5) {
+						if (indice <= i && i <= indice + 6) {
 							return (
 								<div onClick={() => console.log(x.name)} data-bs-toggle="modal" data-bs-target="#exampleModal" className="elemento">
 									{/* <button onClick={() => props.cambiarPokemon(i)} type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Launch demo modal</button> */}
