@@ -1,0 +1,78 @@
+.container-inicio {
+    position: relative;
+    margin: auto;
+    width: 95%;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.background-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo {
+    position: absolute;
+    width: 90%;
+    top: 25px;
+}
+
+.button-aceptar {
+    position: absolute;
+    width: 200px;
+    bottom: 25px;
+}
+
+.btn-aceptar {
+    background-color: #FF3838;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-color: black;
+    border-width: 3px;
+    border-radius: 10%;
+    font-weight: 700;
+    font-size: large;
+    font-family:'Consolas';
+} 
+
+.btn-aceptar:hover {
+    background-color: #FF1C1C;
+    cursor: pointer;
+}
+
+.pikachu {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    bottom: 85px;
+    animation: pikachuJump .5s linear infinite;
+}
+
+.pikachu-img {
+    width: 80px;
+    height: 80px;
+}
+
+/* .pikachuJump {
+    animation: pikachuJump 1s linear infinite;
+} */
+
+@keyframes pikachuJump {
+    0%{
+        bottom: 85px;
+
+    }
+    50%,55%{
+        bottom: 88px;
+    }
+}
