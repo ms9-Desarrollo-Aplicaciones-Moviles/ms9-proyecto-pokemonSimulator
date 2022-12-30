@@ -15,9 +15,8 @@ const Carrucel = (props) => {
 			</div>
 			<div className="container-carrusel">
 				<div className="carrusel">
-					{indice}
 					{props.pokemon.map((x, i) => {
-						if (indice <= i && i <= indice + 5) {
+						if (indice <= i && i <= indice + 6) {
 							return (
 								<div onClick={() => props.cambiarPokemon(i)} className="elemento">
 									<div className="imagen-pokemon">
