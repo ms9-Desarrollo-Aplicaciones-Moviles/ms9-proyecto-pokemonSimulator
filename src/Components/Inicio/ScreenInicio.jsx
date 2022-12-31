@@ -1,7 +1,8 @@
-import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './ScreenInicio.css';
 
 const ScreenInicio = () => {
+    const path = useNavigate();
 
     return (
         <>
@@ -11,7 +12,7 @@ const ScreenInicio = () => {
                 <img src='./img/logo.png'></img>
             </div>
             <div className='button-aceptar'>
-                <button className='btn-aceptar'>
+                <button className='btn-aceptar' onClick={() => path('/pokedex')}>
                     ACEPTAR
                 </button>
             </div>
