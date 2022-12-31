@@ -7,7 +7,7 @@ button:focus {
 
 .container-inicio {
     position: relative;
-    margin: 0 auto;
+    margin: 0px auto;
     margin-top: 15px;
     width: 95%;
     height: 95vh;
@@ -15,10 +15,13 @@ button:focus {
     justify-content: center;
     align-items: center;
     text-align: center;
-    overflow: hidden;
+    /* overflow: hidden; */
+    background: url('./img/background-inicio.png');
+    -webkit-animation: moveBackground 5s linear infinite;
+    animation: moveBackground 5s linear infinite;
 }
 
-.background-image {
+/* .background-image {
     position: absolute;
     width: 100%;
     height: 110%;
@@ -28,7 +31,7 @@ button:focus {
     background: url('./img/background-inicio.png');
     -webkit-animation: moveBackground 5s linear infinite;
     animation: moveBackground 5s linear infinite;
-}
+} */
 
 .logo {
     position: absolute;

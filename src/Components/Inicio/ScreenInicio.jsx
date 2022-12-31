@@ -42,7 +42,7 @@ const ScreenInicio = () => {
     return (
         <>
         <div id='board' className="container-inicio">
-            <div className='background-image'> </div>
+            {/* <div className='background-image'> </div> */}
             <div className='logo'>
                 <img src='./img/logo.png'></img>
             </div>
