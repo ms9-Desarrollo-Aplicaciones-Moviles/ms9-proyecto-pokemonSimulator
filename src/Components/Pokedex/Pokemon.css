@@ -1,0 +1,76 @@
+/* Fondos de los tipos de pokemones */
+
+.badge {
+	font-size: 13.5px;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.bg-normal {
+	background-color: rgb(152, 153, 94);
+}
+.bg-fighting {
+	background-color: rgb(176, 35, 23);
+}
+.bg-flying {
+	background-color: rgb(155, 133, 233);
+}
+.bg-poison {
+	background-color: rgb(145, 55, 138);
+}
+.bg-ground {
+	background-color: rgb(218, 181, 110);
+}
+.bg-rock {
+	background-color: rgb(172, 139, 46);
+}
+.bg-bug {
+	background-color: rgb(149, 168, 25);
+}
+.bg-ghost {
+	background-color: rgb(77, 57, 118);
+}
+.bg-steel {
+	background-color: rgb(170, 167, 203);
+}
+.bg-fire {
+	background-color: rgb(235, 110, 38);
+}
+.bg-water {
+	background-color: rgb(77, 131, 239);
+}
+.bg-grass {
+	background-color: rgb(103, 192, 65);
+}
+.bg-electric {
+	background-color: rgb(249, 197, 31);
+}
+.bg-psychic {
+	background-color: rgb(250, 66, 117);
+}
+.bg-ice {
+	background-color: rgb(130, 209, 204);
+}
+.bg-dragon {
+	background-color: rgb(98, 43, 244);
+}
+.bg-dark {
+	background-color: rgb(96, 69, 52);
+}
+.bg-fairy {
+	background-color: rgb(209, 148, 208);
+}
+.bg-unknown {
+	background-color: rgb(0, 0, 0);
+}
+.bg-shadow {
+	background-color: rgb(110, 0, 184);
+}
+
+/* Estilos de los componentes */
+.contenedorPokemon {
+	display: flex;
+}
+
+.btnAtras {
+	position: relative;
+	margin: 15px 0 0 15px;
+}

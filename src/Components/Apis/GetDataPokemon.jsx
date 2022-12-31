@@ -10,8 +10,17 @@ export const GetPokemon = () => {
 
 		results.map(async (pokemon) => {
 			const respuestaPokemon = await fetch(pokemon.url)
-			const { abilities, base_experience, id, name, sprites, stats, types } =
-				await respuestaPokemon.json()
+			const {
+				abilities,
+				base_experience,
+				id,
+				name,
+				sprites,
+				stats,
+				types,
+				height,
+				weight,
+			} = await respuestaPokemon.json()
 
 			await arrPoke.push({
 				id: id,
@@ -21,6 +30,8 @@ export const GetPokemon = () => {
 				types: types,
 				abilities: abilities,
 				base_experience: base_experience,
+				height: height,
+				weight: weight,
 			})
 
 			arrPoke.sort((a, b) => a.id - b.id)
