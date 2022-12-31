@@ -4,16 +4,57 @@ import './ScreenInicio.css';
 const ScreenInicio = () => {
     const path = useNavigate();
 
+    const regiones = [
+        {
+            value: 'Kanto',
+            name: 'Kanto'
+        },
+        {
+            value: 'Johto',
+            name: 'Johto'
+        },
+        {
+            value: 'Hoenn',
+            name: 'Hoenn'
+        },
+        {
+            value: 'Sinnoh',
+            name: 'Sinnoh'
+        },
+        {
+            value: 'Teselia',
+            name: 'Teselia'
+        },
+        {
+            value: 'Kalos',
+            name: 'Kalos'
+        },
+        {
+            value: 'Alola',
+            name: 'Alola'
+        },
+        {
+            value: 'Galar',
+            name: 'Galar'
+        },
+    ];
+
     return (
         <>
         <div id='board' className="container-inicio">
-            <img className='background-image' src='./img/background-inicio.png'></img>
+            <div className='background-image'> </div>
             <div className='logo'>
                 <img src='./img/logo.png'></img>
             </div>
+            <div className='dropDownRegion'>
+                <h1 className='headerRegion'>Selecciona la región: </h1>
+                <select className='selectRegion'>
+                    {regiones.map(region => <option key={region.value} value={region.value}>{region.name}</option>)}
+                </select>
+            </div>
             <div className='button-aceptar'>
                 <button className='btn-aceptar' onClick={() => path('/pokedex')}>
-                    ACEPTAR
+                    Aceptar
                 </button>
             </div>
             <div id='player-pikachu' className='pikachu'>

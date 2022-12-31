@@ -1,22 +1,33 @@
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
 .container-inicio {
     position: relative;
-    margin: auto;
+    margin: 0 auto;
+    margin-top: 15px;
     width: 95%;
     height: 95vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    overflow: hidden;
 }
 
 .background-image {
-    margin-top: 15px;
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 110%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background: url('./img/background-inicio.png');
+    -webkit-animation: moveBackground 5s linear infinite;
+    animation: moveBackground 5s linear infinite;
 }
 
 .logo {
@@ -25,10 +36,38 @@
     top: 25px;
 }
 
+.dropDownRegion {
+    position: absolute;
+    padding: 5px;
+    width: 30%;
+    bottom: 38%;
+    background-color: white;
+    display: flex;
+    border-color: black;
+    border-width: 3px;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 18px;
+    font-family:'Consolas';
+}
+
+.selectRegion {
+    width: 40%;
+    border: none;
+}
+
+.headerRegion {
+    margin: 2px;
+    width: 60%;
+    font-weight: 500;
+    font-size: 16px;
+    font-family:'Consolas';
+}
+
 .button-aceptar {
     position: absolute;
     width: 200px;
-    bottom: 8px;
+    bottom: 17px;
 }
 
 .btn-aceptar {
@@ -40,9 +79,9 @@
     padding-bottom: 10px;
     border-color: black;
     border-width: 3px;
-    border-radius: 10%;
+    border-radius: 15px;
     font-weight: 700;
-    font-size: large;
+    font-size: 20px;
     font-family:'Consolas';
 } 
 
@@ -55,7 +94,8 @@
     position: absolute;
     width: 80px;
     height: 80px;
-    bottom: 70px;
+    bottom: 83px;
+    -webkit-animation: pikachuJump .55s linear infinite;
     animation: pikachuJump .55s linear infinite;
 }
 
@@ -64,16 +104,40 @@
     height: 80px;
 }
 
-/* .pikachuJump {
-    animation: pikachuJump 1s linear infinite;
-} */
-
-@keyframes pikachuJump {
+@-webkit-keyframes pikachuJump {
     0%{
-        bottom: 70px;
+        bottom: 83px;
 
     }
     50%,55%{
-        bottom: 72px;
+        bottom: 85px;
+    }
+}
+
+@keyframes pikachuJump {
+    0%{
+        bottom: 83px;
+
+    }
+    50%,55%{
+        bottom: 85px;
+    }
+}
+
+@-webkit-keyframes moveBackground {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -400px 0;
+    }
+}
+
+@keyframes moveBackground {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -400px 0;
     }
 }
