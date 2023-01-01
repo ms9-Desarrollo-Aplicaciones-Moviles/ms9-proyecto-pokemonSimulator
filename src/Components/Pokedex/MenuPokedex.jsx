@@ -6,10 +6,16 @@ import { useEffect, useState } from 'react'
 
 const MenuPokedex = () => {
 	const allPokemons = GetPokemon()
-	const [pokemonSelecionado, setPokemmonSelecionado] = useState(0)
+	const [inputPokemon, setInputPokemon] = useState('')
 
-	console.log('allPokemons', allPokemons)
-
+	let inputHandler = (e) => {
+		//convert input text to lower case
+		var lowerCase = e.target.value.toLowerCase()
+		setInputPokemon(lowerCase)
+	}
+	const cleanInput = () => {
+		setInputPokemon('')
+	}
 	return (
 		<>
 			<div className="container">
@@ -19,11 +25,15 @@ const MenuPokedex = () => {
 							<div className="buscador">
 								<input
 									className="input-buscador"
+									id="inputPokemon"
 									type="text"
-									placeholder="Buscar en la Pokedex..."
+									placeholder="Nombre del pokemon..."
+									value={inputPokemon}
+									onChange={inputHandler}
 								/>
+
 								<div className="limpiador">
-									<button className="btn-limpiar">Limpiar</button>
+									<button onClick={cleanInput} className="btn-limpiar" />
 								</div>
 								<button className="btn-buscar">
 									<i className="fa-solid fa-magnifying-glass"></i>
@@ -145,7 +155,7 @@ const MenuPokedex = () => {
 					</div>
 
 					<div className="card-carrucel">
-						<Carrucel cambiarPokemon={setPokemmonSelecionado} pokemon={allPokemons} />
+						<Carrucel inputPokemon={inputPokemon} pokemon={allPokemons} />
 					</div>
 				</div>
 			</div>

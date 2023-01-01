@@ -7,6 +7,23 @@ const Carrucel = (props) => {
 	const [indice, setIndice] = useState(0)
 	const path = useNavigate()
 
+	//create a new array by filtering the original array
+	const filteredData = props.pokemon.filter((pokemon) => {
+		//if no input then return the original
+		if (props.inputPokemon === '') {
+			return pokemon
+		}
+		//return the item which contains the user input
+		else {
+			return pokemon.name.toLowerCase().includes(props.inputPokemon)
+		}
+	})
+
+	useEffect(() => {
+		setIndice(indice + 1)
+		setIndice(0)
+	}, [props.inputPokemon])
+
 	return (
 		<>
 			<div
@@ -17,7 +34,7 @@ const Carrucel = (props) => {
 			</div>
 			<div className="container-carrusel">
 				<div className="carrusel">
-					{props.pokemon.map((x, i) => {
+					{filteredData.map((x, i) => {
 						if (indice <= i && i <= indice + 6) {
 							return (
 								<div
