@@ -8,7 +8,7 @@ const MenuPokedex = () => {
 	const allPokemons = GetPokemon()
 	const [pokemonSelecionado, setPokemmonSelecionado] = useState(0)
 
-	console.log('allPokemons', allPokemons)
+	console.log('allPokemons', allPokemons);	
 
 	return (
 		<>
@@ -148,7 +148,8 @@ const MenuPokedex = () => {
 						<Carrucel cambiarPokemon={setPokemmonSelecionado} pokemon={allPokemons} />
 					</div>
 				</div>
-			</div>
+
+			</div>				
 		</>
 	)
 }
