@@ -15,16 +15,18 @@ button:focus {
     justify-content: center;
     align-items: center;
     text-align: center;
+    font-family:'Consolas';
     background-image: url(/img/background-inicio.png);    
     background-position: bottom;
     -webkit-animation: moveBackground 15s linear infinite;
     animation: moveBackground 15s linear infinite;
+    overflow: hidden;
 }
 
 .background-image {
     position: absolute;
-    width: 100%;
-    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -53,7 +55,6 @@ button:focus {
     border-radius: 10px;
     font-weight: 500;
     font-size: 18px;
-    font-family:'Consolas';
 }
 
 .selectRegion {
@@ -65,8 +66,7 @@ button:focus {
     margin: 2px;
     width: 60%;
     font-weight: 500;
-    font-size: 16px;
-    font-family:'Consolas';
+    font-size: 17px;
 }
 
 .button-aceptar {
@@ -109,6 +109,37 @@ button:focus {
     height: 80px;
 }
 
+.pokeball {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    bottom: 10.5%;
+    right: 0;
+    -webkit-animation: pokeballMovement 3s linear infinite;
+    animation: pokeballMovement 3s linear infinite;
+}
+
+.pokeball-img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.score {
+    position: absolute;
+    bottom: 3%;
+    right: 2%;
+    font-size: 15px;
+}
+
+.score span {
+    font-weight: 600;
+}
+
+.pikachuJump {
+    -webkit-animation: pikachuJumpClic .7s linear;
+    animation: pikachuJumpClic .7s linear;
+}
+
 @-webkit-keyframes pikachuJump {
     0%{
         bottom: 14.5%;
@@ -129,6 +160,26 @@ button:focus {
     }
 }
 
+@-webkit-keyframes pokeballMovement {
+    0%{
+        right: 0;
+
+    }
+    100%{
+        right: 100%;
+    }
+}
+
+@keyframes pokeballMovement {
+    0%{
+        right: 0;
+
+    }
+    100%{
+        right: 100%;
+    }
+}
+
 @-webkit-keyframes moveBackground {
     from {
         background-position: 0 0;
@@ -144,5 +195,25 @@ button:focus {
     }
     to {
         background-position: -1980px 0;
+    }
+}
+
+@-webkit-keyframes pikachuJumpClic {
+    0%{
+        bottom: 14.5%;
+
+    }
+    45%,55%{
+        bottom: 21.5%;
+    }
+}
+
+@keyframes pikachuJumpClic {
+    0%{
+        bottom: 14.5%;
+
+    }
+    45%,55%{
+        bottom: 21.5%;
     }
 }
