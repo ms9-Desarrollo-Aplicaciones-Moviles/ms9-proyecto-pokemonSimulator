@@ -1,3 +1,4 @@
+import { render } from 'react-dom';
 import { useNavigate } from 'react-router-dom';
 import './ScreenInicio.css';
 
@@ -38,24 +39,26 @@ const ScreenInicio = () => {
             name: 'Galar'
         },
     ];
-
+    
     return (
         <>
         <div id='board' className="container-inicio">
-            {/* <div className='background-image'> </div> */}
+            <div className='background-image'> </div>
             <div className='logo'>
                 <img src='./img/logo.png'></img>
             </div>
             <div className='dropDownRegion'>
                 <h1 className='headerRegion'>Selecciona la región: </h1>
                 <select className='selectRegion'>
-                    {regiones.map(region => <option key={region.value} value={region.value}>{region.name}</option>)}
+                    {regiones.map(region => <option 
+                    key={region.value} 
+                    value={region.value}>{region.name}</option>)}
                 </select>
             </div>
             <div className='button-aceptar'>
-                <button className='btn-aceptar' onClick={() => path('/pokedex')}>
+                <button className='btn-aceptar' onClick={() => {path('/pokedex')}}>
                     Aceptar
-                </button>
+                </button>                
             </div>
             <div id='player-pikachu' className='pikachu'>
                 <img className='pikachu-img' src='./img/pikachu-running.gif'></img>

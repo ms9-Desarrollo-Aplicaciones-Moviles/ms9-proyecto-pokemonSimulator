@@ -15,23 +15,23 @@ button:focus {
     justify-content: center;
     align-items: center;
     text-align: center;
-    /* overflow: hidden; */
-    background: url('./img/background-inicio.png');
-    -webkit-animation: moveBackground 5s linear infinite;
-    animation: moveBackground 5s linear infinite;
+    overflow: hidden;    
+    -webkit-animation: moveBackground 15s linear infinite;
+    animation: moveBackground 15s linear infinite;
 }
 
-/* .background-image {
+.background-image {
     position: absolute;
     width: 100%;
     height: 110%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: url('./img/background-inicio.png');
-    -webkit-animation: moveBackground 5s linear infinite;
-    animation: moveBackground 5s linear infinite;
-} */
+    background-image: url(/img/background-inicio.png);    
+    background-position: bottom;
+    -webkit-animation: moveBackground 15s linear infinite;
+    animation: moveBackground 15s linear infinite;
+}
 
 .logo {
     position: absolute;
@@ -132,7 +132,7 @@ button:focus {
         background-position: 0 0;
     }
     to {
-        background-position: -400px 0;
+        background-position: -1980px 0;
     }
 }
 
@@ -141,6 +141,6 @@ button:focus {
         background-position: 0 0;
     }
     to {
-        background-position: -400px 0;
+        background-position: -1980px 0;
     }
 }
