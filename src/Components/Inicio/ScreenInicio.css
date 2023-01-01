@@ -15,7 +15,8 @@ button:focus {
     justify-content: center;
     align-items: center;
     text-align: center;
-    overflow: hidden;    
+    background-image: url(/img/background-inicio.png);    
+    background-position: bottom;
     -webkit-animation: moveBackground 15s linear infinite;
     animation: moveBackground 15s linear infinite;
 }
@@ -23,11 +24,12 @@ button:focus {
 .background-image {
     position: absolute;
     width: 100%;
-    height: 110%;
+    height: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-image: url(/img/background-inicio.png);    
+    background-image: url(/img/background-inicio.png);  
+    background-size: contain;
     background-position: bottom;
     -webkit-animation: moveBackground 15s linear infinite;
     animation: moveBackground 15s linear infinite;
@@ -36,7 +38,7 @@ button:focus {
 .logo {
     position: absolute;
     width: 90%;
-    top: 25px;
+    top: 3%;
 }
 
 .dropDownRegion {
@@ -70,7 +72,7 @@ button:focus {
 .button-aceptar {
     position: absolute;
     width: 200px;
-    bottom: 17px;
+    bottom: 3%;
 }
 
 .btn-aceptar {
@@ -97,7 +99,7 @@ button:focus {
     position: absolute;
     width: 80px;
     height: 80px;
-    bottom: 83px;
+    bottom: 14.5%;
     -webkit-animation: pikachuJump .55s linear infinite;
     animation: pikachuJump .55s linear infinite;
 }
@@ -109,21 +111,21 @@ button:focus {
 
 @-webkit-keyframes pikachuJump {
     0%{
-        bottom: 83px;
+        bottom: 14.5%;
 
     }
     50%,55%{
-        bottom: 85px;
+        bottom: 15.5%;
     }
 }
 
 @keyframes pikachuJump {
     0%{
-        bottom: 83px;
+        bottom: 14.5%;
 
     }
     50%,55%{
-        bottom: 85px;
+        bottom: 15.5%;
     }
 }
 
