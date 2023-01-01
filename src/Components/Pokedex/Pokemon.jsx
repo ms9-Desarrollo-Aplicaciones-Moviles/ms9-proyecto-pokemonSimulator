@@ -179,49 +179,90 @@ const Pokemon = () => {
 
 	return (
 		<>
-			<div className="contenedorPokemon m-0 w-100">
-				<div className="btnAtras">
-					<a
-						type="button"
-						onClick={() => path('/pokedex')}
-						className="btn btn-lg bg-primary text-light border border-dark btn-Volver"
-					>
-						Volver
-					</a>
-				</div>
-				<div className="contenedorSuperior">
-					<div className="datosPokemon">
-						<div className="datosPokemonSuperior">
-							<div className="numeroPokemon"></div>
-							<div className="nombrePokemon"></div>
+		<div className='header-main-pokemon'>
+						<span className='number-pokemon'>#{pokemon.id}</span>
+						<div className='container-img-pokemon'>
+							<img
+								src={pokemon.sprites.other.dream_world.front_default}
+								alt={`Pokemon ${pokemon.name}`}
+							/>
 						</div>
-						<div className="datosPokemonInferior">
-							<div className="tiposPokemon">
-								{pokemon.types.map((tipoPokemon) => {
+
+						<div className='container-info-pokemon'>
+							<h1>{pokemon.name}</h1>
+							<div className='card-types info-pokemon-type'>
+							{pokemon.types.map((tipoPokemon) => {
 									return renderSwitchTiposPokemon(tipoPokemon)
 								})}
 							</div>
-							<div className="datos">
-								<div className="altura">{pokemon.height / 10} Kg</div>
-								<div className="peso">{pokemon.weight / 10} m</div>
+							<div className='info-pokemon'>
+								<div className='group-info'>
+									<p>Altura</p>
+									<span>{pokemon.height}</span>
+								</div>
+								<div className='group-info'>
+									<p>Peso</p>
+									<span>{pokemon.weight}KG</span>
+								</div>
 							</div>
 						</div>
 					</div>
-					<div className="imgPokemon m-0">
-						<img src={pokemon.sprites.front_default} width={'300px'}></img>
-					</div>
-				</div>
-				<div className="contenedorInferior">
-					<div className="statsPokemon">
-						<div className="contendorIzq">Estadísticas</div>
-						<div className="contenedorDer">
-							{pokemon.stats.map((stat) => {
-								return renderSwitchStatsPokemon(stat)
-							})}
+
+
+
+					<div className='container-stats'>
+						<h1>Estadísticas</h1>
+						<div className='stats'>
+							<div className='stat-group'>
+								<span>Hp</span>
+								<div className='progress-bar'></div>
+								<span className='counter-stat'>
+									{pokemon.stats[0].base_stat}
+								</span>
+							</div>
+							<div className='stat-group'>
+								<span>Ataque</span>
+								<div className='progress-bar'></div>
+								<span className='counter-stat'>
+									{pokemon.stats[1].base_stat}
+								</span>
+							</div>
+							<div className='stat-group'>
+								<span>Defensa</span>
+								<div className='progress-bar'></div>
+								<span className='counter-stat'>
+									{pokemon.stats[2].base_stat}
+								</span>
+							</div>
+							<div className='stat-group'>
+								<span>Ataque Especial</span>
+								<div className='progress-bar'></div>
+								<span className='counter-stat'>
+									{pokemon.stats[3].base_stat}
+								</span>
+							</div>
+							<div className='stat-group'>
+								<span>Defensa Especial</span>
+								<div className='progress-bar'></div>
+								<span className='counter-stat'>
+									{pokemon.stats[4].base_stat}
+								</span>
+							</div>
+							<div className='stat-group'>
+								<span>Velocidad</span>
+								<div className='progress-bar'></div>
+								<span className='counter-stat'>
+									{pokemon.stats[5].base_stat}
+								</span>
+							</div>
 						</div>
 					</div>
-				</div>
-			</div>
+
+
+					<div class="pokebola">
+		<div class="pokebola-botao" type="button"
+						onClick={() => path('/pokedex')}></div></div>
+
 		</>
 	)
 }
