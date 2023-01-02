@@ -33,7 +33,9 @@ const MenuPokedex = () => {
 								/>
 
 								<div className="limpiador">
-									<button onClick={cleanInput} className="btn-limpiar" />
+									<button onClick={cleanInput} className="btn-limpiar">
+										Limpiar
+									</button>
 								</div>
 								<button className="btn-buscar">
 									<i className="fa-solid fa-magnifying-glass"></i>
