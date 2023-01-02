@@ -46,7 +46,7 @@ button:focus {
 .dropDownRegion {
     position: absolute;
     padding: 5px;
-    width: 30%;
+    width: 35%;
     bottom: 38%;
     background-color: white;
     display: flex;
@@ -63,7 +63,7 @@ button:focus {
 }
 
 .headerRegion {
-    margin: 2px;
+    margin: 8px;
     width: 60%;
     font-weight: 500;
     font-size: 17px;
