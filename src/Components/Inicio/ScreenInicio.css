@@ -2,7 +2,7 @@ input:focus,
 select:focus,
 textarea:focus,
 button:focus {
-    outline: none;
+	outline: none;
 }
 
 .container-inicio {
@@ -58,8 +58,8 @@ button:focus {
 }
 
 .selectRegion {
-    width: 40%;
-    border: none;
+	width: 40%;
+	border: none;
 }
 
 .headerRegion {
@@ -76,23 +76,23 @@ button:focus {
 }
 
 .btn-aceptar {
-    background-color: #FF3838;
-    color: white;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-color: black;
-    border-width: 3px;
-    border-radius: 15px;
-    font-weight: 700;
-    font-size: 20px;
-    font-family:'Consolas';
-} 
+	background-color: #ff3838;
+	color: white;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-color: black;
+	border-width: 3px;
+	border-radius: 15px;
+	font-weight: 700;
+	font-size: 20px;
+	font-family: 'Consolas';
+}
 
 .btn-aceptar:hover {
-    background-color: #FF1C1C;
-    cursor: pointer;
+	background-color: #ff1c1c;
+	cursor: pointer;
 }
 
 .pikachu {
@@ -105,8 +105,8 @@ button:focus {
 }
 
 .pikachu-img {
-    width: 80px;
-    height: 80px;
+	width: 80px;
+	height: 80px;
 }
 
 .pokeball {
