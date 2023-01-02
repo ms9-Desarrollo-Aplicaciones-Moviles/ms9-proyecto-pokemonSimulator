@@ -6,53 +6,55 @@ button:focus {
 }
 
 .container-inicio {
-	position: relative;
-	margin: 0px auto;
-	margin-top: 15px;
-	width: 95%;
-	height: 95vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	/* overflow: hidden; */
-	background: url('./img/background-inicio.png');
-	background-size: cover;
-	-webkit-animation: moveBackground 5s linear infinite;
-	animation: moveBackground 5s linear infinite;
+    position: relative;
+    margin: 0px auto;
+    margin-top: 15px;
+    width: 95%;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family:'Consolas';
+    background-image: url(/img/background-inicio.png);    
+    background-position: bottom;
+    -webkit-animation: moveBackground 15s linear infinite;
+    animation: moveBackground 15s linear infinite;
+    overflow: hidden;
 }
 
-/* .background-image {
+.background-image {
     position: absolute;
-    width: 100%;
-    height: 110%;
+    min-width: 100%;
+    min-height: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: url('./img/background-inicio.png');
-    -webkit-animation: moveBackground 5s linear infinite;
-    animation: moveBackground 5s linear infinite;
-} */
+    background-image: url(/img/background-inicio.png);  
+    background-size: contain;
+    background-position: bottom;
+    -webkit-animation: moveBackground 15s linear infinite;
+    animation: moveBackground 15s linear infinite;
+}
 
 .logo {
-	position: absolute;
-	width: 90%;
-	top: 25px;
+    position: absolute;
+    width: 90%;
+    top: 3%;
 }
 
 .dropDownRegion {
-	position: absolute;
-	padding: 5px;
-	width: 30%;
-	bottom: 38%;
-	background-color: white;
-	display: flex;
-	border-color: black;
-	border-width: 3px;
-	border-radius: 10px;
-	font-weight: 500;
-	font-size: 18px;
-	font-family: 'Consolas';
+    position: absolute;
+    padding: 5px;
+    width: 35%;
+    bottom: 38%;
+    background-color: white;
+    display: flex;
+    border-color: black;
+    border-width: 3px;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 18px;
 }
 
 .selectRegion {
@@ -61,17 +63,16 @@ button:focus {
 }
 
 .headerRegion {
-	margin: 2px;
-	width: 60%;
-	font-weight: 500;
-	font-size: 16px;
-	font-family: 'Consolas';
+    margin: 8px;
+    width: 60%;
+    font-weight: 500;
+    font-size: 17px;
 }
 
 .button-aceptar {
-	position: absolute;
-	width: 200px;
-	bottom: 17px;
+    position: absolute;
+    width: 200px;
+    bottom: 3%;
 }
 
 .btn-aceptar {
@@ -95,12 +96,12 @@ button:focus {
 }
 
 .pikachu {
-	position: absolute;
-	width: 80px;
-	height: 80px;
-	bottom: 83px;
-	-webkit-animation: pikachuJump 0.55s linear infinite;
-	animation: pikachuJump 0.55s linear infinite;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    bottom: 14.5%;
+    -webkit-animation: pikachuJump .55s linear infinite;
+    animation: pikachuJump .55s linear infinite;
 }
 
 .pikachu-img {
@@ -108,40 +109,111 @@ button:focus {
 	height: 80px;
 }
 
+.pokeball {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    bottom: 10.5%;
+    right: 0;
+    -webkit-animation: pokeballMovement 3s linear infinite;
+    animation: pokeballMovement 3s linear infinite;
+}
+
+.pokeball-img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.score {
+    position: absolute;
+    bottom: 3%;
+    right: 2%;
+    font-size: 15px;
+}
+
+.score span {
+    font-weight: 600;
+}
+
+.pikachuJump {
+    -webkit-animation: pikachuJumpClic .7s linear;
+    animation: pikachuJumpClic .7s linear;
+}
+
 @-webkit-keyframes pikachuJump {
-	0% {
-		bottom: 83px;
-	}
-	50%,
-	55% {
-		bottom: 85px;
-	}
+    0%{
+        bottom: 14.5%;
+
+    }
+    50%,55%{
+        bottom: 15.5%;
+    }
 }
 
 @keyframes pikachuJump {
-	0% {
-		bottom: 83px;
-	}
-	50%,
-	55% {
-		bottom: 85px;
-	}
+    0%{
+        bottom: 14.5%;
+
+    }
+    50%,55%{
+        bottom: 15.5%;
+    }
+}
+
+@-webkit-keyframes pokeballMovement {
+    0%{
+        right: 0;
+
+    }
+    100%{
+        right: 100%;
+    }
+}
+
+@keyframes pokeballMovement {
+    0%{
+        right: 0;
+
+    }
+    100%{
+        right: 100%;
+    }
 }
 
 @-webkit-keyframes moveBackground {
-	from {
-		background-position: 0 0;
-	}
-	to {
-		background-position: -400px 0;
-	}
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -1778px 0;
+    }
 }
 
 @keyframes moveBackground {
-	from {
-		background-position: 0 0;
-	}
-	to {
-		background-position: -400px 0;
-	}
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -1778px 0;
+    }
+}
+
+@-webkit-keyframes pikachuJumpClic {
+    0%{
+        bottom: 14.5%;
+
+    }
+    45%,55%{
+        bottom: 21.5%;
+    }
+}
+
+@keyframes pikachuJumpClic {
+    0%{
+        bottom: 14.5%;
+
+    }
+    45%,55%{
+        bottom: 21.5%;
+    }
 }

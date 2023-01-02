@@ -160,7 +160,8 @@ const MenuPokedex = () => {
 						<Carrucel inputPokemon={inputPokemon} pokemon={allPokemons} />
 					</div>
 				</div>
-			</div>
+
+			</div>				
 		</>
 	)
 }
