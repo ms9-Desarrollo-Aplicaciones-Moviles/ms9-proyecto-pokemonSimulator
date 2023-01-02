@@ -107,10 +107,6 @@ const ScreenInicio = () => {
                     Aceptar
                 </button>
             </div>
-            <div id='player-pikachu' className='pikachu'>
-                <img className='pikachu-img' src='./img/pikachu-running.gif'></img>
-                {/* https://media.tenor.com/fSsxftCb8w0AAAAi/pikachu-running.gif */}
-            </div>
         </div>
         </>
     );
